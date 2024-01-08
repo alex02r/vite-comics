@@ -27,6 +27,7 @@ export default {
     </div>
 </template>
 <style lang="scss" scoped>
+@use '../styles/variables.scss' as *;
     .container{
         max-width: 1200px;
         margin: 0 auto;
@@ -49,8 +50,8 @@ export default {
                         
                     }
                     li.active{
-                        color: blue;
-                        border-bottom: 3px solid blue;
+                        color: $primary;
+                        border-bottom: 3px solid $primary;
                     }
                 }
             }

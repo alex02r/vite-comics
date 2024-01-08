@@ -111,12 +111,13 @@ export default {
     </footer>
 </template>
 <style lang="scss" scoped>
+    @use '../styles/variables.scss' as *;
     .container{
         max-width: 1200px;
         margin: 0 auto;
     }
     .blu-list{
-        background-color: rgb(15, 159, 255);
+        background-color: $primary;
         width: 100%;
         .list{
             ul{
@@ -129,7 +130,7 @@ export default {
                     align-items: center;
                     gap: 10px;
                     margin: 40px 30px;
-                    color: #fff;
+                    color: $white;
                     img{
                         max-width: 50px;
                         height: 50px;
@@ -147,7 +148,7 @@ export default {
             .lists-group{
                 display: flex;
                 padding: 30px 0;
-                color: #fff;
+                color: $white;
                 ul{
                     margin: 10px 0;
                     list-style: none;
@@ -166,14 +167,14 @@ export default {
             padding: 30px 0;
             .btn{
                 padding: 10px;
-                color: #fff;
-                border: 2px solid rgb(15, 159, 255);
+                color: $white;
+                border: 2px solid $primary;
             }
             .side-footer{
                 display: flex;
                 align-items: center;
                 gap: 20px;
-                color: rgb(15, 159, 255);
+                color: $primary;
                 .icons img{
                     margin: 0 5px;
                 }
