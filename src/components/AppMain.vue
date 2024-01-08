@@ -4,23 +4,23 @@ export default {
         return {
             blue_lists:[
                 {
-                    img: '../assets/img/buy-comics-digital-comics.png',
+                    img: '/src/assets/img/buy-comics-digital-comics.png',
                     title: 'DIGITAL COMICS'
                 },
                 {
-                    img: '../assets/img/buy-comics-merchandise.png',
+                    img: '/src/assets/img/buy-comics-merchandise.png',
                     title: 'DC MERCHANDISE'
                 },
                 {
-                    img: '../assets/img/buy-comics-subscriptions.png',
+                    img: '/src/assets/img/buy-comics-subscriptions.png',
                     title: 'SUBSCRIPTION'
                 },
                 {
-                    img: '../assets/img/buy-comics-shop-locator.png',
+                    img: '/src/assets/img/buy-comics-shop-locator.png',
                     title: 'COMIC SHOP LOCATOR'
                 },
                 {
-                    img: '../assets/img/buy-dc-power-visa.svg',
+                    img: '/src/assets/img/buy-dc-power-visa.svg',
                     title: 'DC POWER VISA'
                 }
             ]
@@ -30,7 +30,9 @@ export default {
 </script>
 <template lang="">
     <main>
-        <h2> --> Content goes here <-- </h2>
+        <div class="container">
+            <h2> --> Content goes here <-- </h2>
+        </div>
     </main>
     <div class="blu-list">
         <div class="container">
