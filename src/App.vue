@@ -1,26 +1,20 @@
 <script>
 import AppHeader from "./components/AppHeader.vue";
+import AppMain from "./components/AppMain.vue";
 import AppFooter from "./components/AppFooter.vue";
 export default {
   components:{
     AppHeader,
+    AppMain,
     AppFooter
   }
 }
 </script>
 <template lang="">
   <AppHeader></AppHeader>
-  <main>
-    <h2> --> Content goes here<-- </h2>
-  </main>
+  <AppMain></AppMain>
   <AppFooter></AppFooter>
 </template>
-<style lang="scss" scoped>
-  main{
-    background-color: black;
-    h2{
-      padding: 50px 0;
-      color: white;
-    }
-  }
+<style lang="">
+  
 </style>
