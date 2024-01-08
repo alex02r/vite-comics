@@ -10,7 +10,17 @@ export default {
 </script>
 <template lang="">
   <AppHeader></AppHeader>
+  <main>
+    <h2>--> Content goes here<--</h2>
+  </main>
   <AppFooter></AppFooter>
 </template>
 <style lang="scss" scoped>
+  main{
+    background-color: black;
+    h2{
+      padding: 50px 0;
+      color: white;
+    }
+  }
 </style>
