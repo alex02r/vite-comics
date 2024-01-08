@@ -1,6 +1,51 @@
 <script>
 export default {
-    
+    data() {
+        return {
+            list:[
+                {
+                    name: 'CHARACTERS',
+                    current: false
+                },
+                {
+                    name: 'COMICS',
+                    current: true
+                },
+                {
+                    name: 'MOVIES',
+                    current: false
+                },
+                {
+                    name: 'TV',
+                    current: false
+                },
+                {
+                    name: 'GAMES',
+                    current: false
+                },
+                {
+                    name: 'COLLECTIBLES',
+                    current: false
+                },
+                {
+                    name: 'VIDEOS',
+                    current: false
+                },
+                {
+                    name: 'FANS',
+                    current: false
+                },
+                {
+                    name: 'NEWS',
+                    current: false
+                },
+                {
+                    name: 'SHOP',
+                    current: false
+                },
+            ]
+        }
+    },
 }
 </script>
 <template lang="">
@@ -11,16 +56,9 @@ export default {
             </div>
             <div class="nav-list">
                 <ul>
-                    <li>CHARACTERS</li>
-                    <li class="active">COMICS</li>
-                    <li>MOVIES</li>
-                    <li>TV</li>
-                    <li>GAMES</li>
-                    <li>COLLECTIBLES</li>
-                    <li>VIDEOS</li>
-                    <li>FANS</li>
-                    <li>NEWS</li>
-                    <li>SHOP</li>
+                    <li v-for="(item, index) in list" :key="index" :class="item.current ? 'active' : ''">
+                        {{ item.name }}
+                    </li>
                 </ul>
             </div>
         </header>
