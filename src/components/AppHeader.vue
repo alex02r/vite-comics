@@ -13,10 +13,11 @@ export default {
         </div>
     </header>
 </template>
-<style lang="scss">
+<style lang="scss" scoped>
     header{
         display: flex;
         justify-content: space-between;
+        padding: 10px 0;
         .logo img{
             width: 50px;
         }
