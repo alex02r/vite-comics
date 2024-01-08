@@ -35,10 +35,55 @@ export default {
     <footer>
         <div class="container">
             <div class="content-footer">
-                <div class="side-footer">
-
+                <div class="lists-group">
+                    <div class="footer-list">
+                        <h4>DC COMICS</h4>
+                        <ul>
+                            <li>Characters</li>
+                            <li>Comics</li>
+                            <li>Movies</li>
+                            <li>TV</li>
+                            <li>Games</li>
+                            <li>Collectibles</li>
+                            <li>Videos</li>
+                            <li>Fans</li>
+                            <li>News</li>
+                            <li>Shop</li>
+                        </ul>
+                        <h4>SHOP</h4>
+                        <ul>
+                            <li>Shop DC</li>
+                            <li>Shop DC Collectibles</li>
+                        </ul>
+                    </div>
+                    <div class="footer-list">
+                        <h4>DC</h4>
+                        <ul>
+                            <li>Characters</li>
+                            <li>Comics</li>
+                            <li>Movies</li>
+                            <li>TV</li>
+                            <li>Games</li>
+                            <li>Collectibles</li>
+                            <li>Videos</li>
+                            <li>Fans</li>
+                            <li>News</li>
+                            <li>Shop</li>
+                            <li>Shop DC</li>
+                            <li>Shop DC Collectibles</li>
+                        </ul>
+                    </div>
+                    <div class="footer-list">
+                        <h4>SITES</h4>
+                        <ul>
+                            <li>Characters</li>
+                            <li>Comics</li>
+                            <li>Movies</li>
+                            <li>TV</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="side-footer logo-dc">
+                <div class="logo-dc">
                 </div>
             </div>
         </div>
@@ -46,7 +91,6 @@ export default {
             <div class="container">
                 <div class="content-footer">
                     <div class="side-footer">
-    
                     </div>
                     <div class="side-footer">
                     </div>
@@ -89,13 +133,21 @@ export default {
         .content-footer{
             display: flex;
             justify-content: space-between;
-            .side-footer{
-                width: 500px;
-                height: 400px;
-                background-color: #fff;
+            .lists-group{
+                display: flex;
+                padding: 30px 0;
+                color: #fff;
+                ul{
+                    margin: 10px 0;
+                    list-style: none;
+                    color: #717171;
+                    font-size: 14px;
+                }
             }
             .logo-dc{
+                width: 600px;
                 background-image: url('../assets/img/dc-logo-bg.png');
+                background-size: cover;
             }
         }
         .bottom-footer{

@@ -11,7 +11,7 @@ export default {
 <template lang="">
   <AppHeader></AppHeader>
   <main>
-    <h2>--> Content goes here<--</h2>
+    <h2> --> Content goes here<-- </h2>
   </main>
   <AppFooter></AppFooter>
 </template>
