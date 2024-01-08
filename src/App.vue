@@ -11,6 +11,9 @@ export default {
     <AppHeader></AppHeader>
   </div>
 </template>
-<style lang="">
-  
+<style lang="scss" scoped>
+  .container{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 </style>
