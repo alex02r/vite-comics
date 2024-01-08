@@ -90,9 +90,20 @@ export default {
         <div class="bottom-footer">
             <div class="container">
                 <div class="content-footer">
-                    <div class="side-footer">
+                    <div>
+                        <div class="btn">
+                            SIGN-UP NOW!
+                        </div>
                     </div>
                     <div class="side-footer">
+                        <h4>FOLLOW US</h4>
+                        <div class="icons">
+                            <img src="../assets/img/footer-facebook.png" alt="facebook">
+                            <img src="../assets/img/footer-twitter.png" alt="twitter">
+                            <img src="../assets/img/footer-youtube.png" alt="youtube">
+                            <img src="../assets/img/footer-pinterest.png" alt="pinterest">
+                            <img src="../assets/img/footer-periscope.png" alt="periscope">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -151,8 +162,22 @@ export default {
             }
         }
         .bottom-footer{
-            background-color: black;
-            height: 100px;
+            background-color: #303030;
+            padding: 30px 0;
+            .btn{
+                padding: 10px;
+                color: #fff;
+                border: 2px solid rgb(15, 159, 255);
+            }
+            .side-footer{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                color: rgb(15, 159, 255);
+                .icons img{
+                    margin: 0 5px;
+                }
+            }
         }
 
     }
