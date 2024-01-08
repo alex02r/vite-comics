@@ -4,9 +4,14 @@ export default {
 }
 </script>
 <template lang="">
-    <div>
-        
-    </div>
+    <header>
+        <div class="logo">
+
+        </div>
+        <div class="nav-list">
+            
+        </div>
+    </header>
 </template>
 <style lang="">
     
