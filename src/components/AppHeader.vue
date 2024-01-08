@@ -46,6 +46,17 @@ export default {
             ]
         }
     },
+    methods: {
+        
+        clickActive(i){
+            for (let index = 0; index < this.list.length; index++) {
+                if (this.list[index].current) {
+                    this.list[index].current = false;
+                }
+            }
+            this.list[i].current = !this.list[i].current;
+        }
+    },
 }
 </script>
 <template lang="">
@@ -56,7 +67,7 @@ export default {
             </div>
             <div class="nav-list">
                 <ul>
-                    <li v-for="(item, index) in list" :key="index" :class="item.current ? 'active' : ''">
+                    <li v-for="(item, index) in list" :key="index" :class="item.current ? 'active' : ''" @click="clickActive(index)">
                         {{ item.name }}
                     </li>
                 </ul>
@@ -85,7 +96,7 @@ export default {
                         font-size: 14px;
                         margin: 0 10px;
                         font-weight: 600;
-                        
+                        cursor: pointer;
                     }
                     li.active{
                         color: $primary;
