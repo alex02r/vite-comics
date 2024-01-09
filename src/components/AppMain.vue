@@ -116,7 +116,7 @@ export default {
 <template lang="">
     <main>
         <div class="container">
-            <div class="current" v-text="currentComic ? comics[currentComic].series : ''">
+            <div class="current" v-text="currentComic ? comics[currentComic].series : 'CURRENT SERIES'">
             </div>
             <div class="comics">
                 <AppComic v-for="(comic, index) in comics" :key="index" :comic_obj="comic" @click="setCurrentComic(index)"/>
@@ -144,15 +144,21 @@ export default {
         margin: 0 auto;
     }
     main{
+        position: relative;
         background-color: black;
         .current{
+            position: absolute;
+            top: -20px;
+            background-color: $primary;
+            padding: 10px 20px;
+            font-size: 20px;
+            font-weight: 600;
             color: $white;
         }
         .comics{
-            padding: 20px 0;
+            padding: 40px 0;
             display: flex;
             flex-wrap: wrap;
-            gap: 20px;
         }
     }
     .blu-list{

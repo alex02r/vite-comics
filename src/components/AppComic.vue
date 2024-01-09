@@ -15,10 +15,11 @@ export default {
 @use '../styles/generals.scss';
 @use '../styles/partials/variables' as *;
     .comic{
+        margin: 10px;
         width: calc(100% / 6 - 20px);
         img{
             width: 100%;
-            max-height: 200px;
+            height: 200px;
         }
         h3{
             color: $white;
