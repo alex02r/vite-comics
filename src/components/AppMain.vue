@@ -1,5 +1,9 @@
 <script>
+import AppComic from "./AppComic.vue";
 export default {
+    components:{
+        AppComic
+    },
     data() {
         return {
             blue_lists:[
