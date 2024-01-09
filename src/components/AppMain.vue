@@ -101,16 +101,25 @@ export default {
                     "series": "Catwoman",
                     "type": "graphic novel",
                 },
-                ]
+                ],
+            currentComic: null
         }
+    },
+    methods: {
+        setCurrentComic(i){
+            this.currentComic = null;
+            this.currentComic = i;
+        },
     },
 }
 </script>
 <template lang="">
     <main>
         <div class="container">
+            <div class="current" v-text="currentComic ? comics[currentComic].series : ''">
+            </div>
             <div class="comics">
-                <AppComic v-for="(comic, index) in comics" :key="index" :comic_obj="comic"/>
+                <AppComic v-for="(comic, index) in comics" :key="index" :comic_obj="comic" @click="setCurrentComic(index)"/>
             </div>
         </div>
     </main>
@@ -136,6 +145,9 @@ export default {
     }
     main{
         background-color: black;
+        .current{
+            color: $white;
+        }
         .comics{
             padding: 20px 0;
             display: flex;
