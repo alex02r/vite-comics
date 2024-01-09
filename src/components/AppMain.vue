@@ -109,7 +109,9 @@ export default {
 <template lang="">
     <main>
         <div class="container">
-            <h2> --> Content goes here <-- </h2>
+            <div class="comics">
+                <AppComic v-for="(comic, index) in comics" :key="index" :comic_obj="comic"/>
+            </div>
         </div>
     </main>
     <div class="blu-list">
@@ -133,10 +135,7 @@ export default {
     }
     main{
         background-color: black;
-        h2{
-        padding: 50px 0;
-        color: white;
-        }
+        
     }
     .blu-list{
         background-color: $primary;
