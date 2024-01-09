@@ -135,7 +135,12 @@ export default {
     }
     main{
         background-color: black;
-        
+        .comics{
+            padding: 20px 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
     }
     .blu-list{
         background-color: $primary;

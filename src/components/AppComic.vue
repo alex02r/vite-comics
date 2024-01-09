@@ -12,5 +12,11 @@ export default {
     </div>
 </template>
 <style lang="scss" scoped>
-    
+    .comic{
+        width: calc(100% / 6 - 20px);
+        img{
+            width: 100%;
+            max-height: 200px;
+        }
+    }
 </style>
