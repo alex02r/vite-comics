@@ -12,11 +12,16 @@ export default {
     </div>
 </template>
 <style lang="scss" scoped>
+@use '../styles/generals.scss';
+@use '../styles/partials/variables' as *;
     .comic{
         width: calc(100% / 6 - 20px);
         img{
             width: 100%;
             max-height: 200px;
+        }
+        h3{
+            color: $white;
         }
     }
 </style>

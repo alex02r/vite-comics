@@ -83,7 +83,8 @@ export default {
     </footer>
 </template>
 <style lang="scss" scoped>
-    @use '../styles/variables.scss' as *;
+@use '../styles/generals.scss';
+@use '../styles/partials/variables' as *;
     .container{
         max-width: 1200px;
         margin: 0 auto;
